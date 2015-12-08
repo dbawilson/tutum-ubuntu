@@ -35,10 +35,7 @@ RUN git clone https://github.com/easychen/KODExplorer.git  /var/www/html
 # 安装aria2
 RUN apt-get install aria2 -y 
 #install ss
-RUN apt-get install python-setuptools
-RUN easy_install pip
-RUN apt-get install  m2crypto gitLoaded plugins: fastestmirror
-RUN pip install shadowsocks
+
 
 ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
